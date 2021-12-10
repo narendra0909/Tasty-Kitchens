@@ -1,0 +1,97 @@
+.not-found-app-container {
+  background-color: #e5e5e5;
+  height: 100%;
+}
+.not-found-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px;
+}
+.not-found-image {
+  height: 270px;
+  width: 290px;
+}
+.not-found-heading {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 48px;
+  color: #1e293b;
+  text-align: center;
+}
+.not-found-description {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #475569;
+}
+.not-found-button {
+  height: 48px;
+  width: 123px;
+  font-family: DM Sans;
+  border-radius: 12px;
+  padding: 12px 24px;
+  background-color: #f7931e;
+  outline: none;
+  font-size: 12px;
+  border-width: 0;
+  color: #ffff;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 8px;
+  cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+  .not-found-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+  }
+  .not-found-image {
+    height: 175px;
+    width: 203px;
+  }
+  .not-found-heading {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 32px;
+    color: #1e293b;
+    text-align: center;
+  }
+  .not-found-button {
+    height: 32px;
+    width: 93px;
+    font-family: DM Sans;
+    border-radius: 12px;
+    padding: 8px 16px;
+    background-color: #f7931e;
+    outline: none;
+    font-size: 12px;
+    border-width: 0;
+    color: #ffff;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    cursor: pointer;
+  }
+  .not-found-description {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: #475569;
+  }
+}

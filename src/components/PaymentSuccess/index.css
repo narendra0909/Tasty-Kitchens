@@ -1,0 +1,45 @@
+.payment-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.payment-icon {
+  font-size: 60px;
+  background-color: green;
+  border-radius: 30px;
+  color: #ffffff;
+}
+.payment-heading {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #1e293b;
+}
+.payment-description {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #64748b;
+}
+.success-button {
+  height: 32px;
+  width: 131px;
+  border-radius: 8px;
+  padding: 8px, 16px, 8px, 16px;
+  background: #f7931e;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  border-width: 0;
+  color: #ffffff;
+}

@@ -1,0 +1,140 @@
+.restaurants-container {
+  padding: 20px;
+  margin: 0 20px;
+}
+.search-input {
+  width: 260px;
+  height: 30px;
+  font-size: 16px;
+  border-radius: 5px;
+  border-width: 0;
+  border-bottom: 2px solid #ffcc00;
+  margin: 0 20px;
+  font-family: DM Sans;
+  border: 1px solid #000;
+}
+
+.restaurant-lists {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px;
+  flex-grow: 0;
+  flex-shrink: 1;
+}
+.restaurant-id {
+  text-decoration: none;
+}
+.restaurant-list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 20px;
+  height: 210px;
+  width: 378px;
+}
+.restaurant-image {
+  height: 100px;
+  width: 160px;
+  border-radius: 8px;
+}
+.restaurant-details {
+  padding: 10px;
+}
+.restaurant-food-type {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #64748b;
+  margin: 10px 0;
+}
+.restaurant-name {
+  font-family: DM Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+  color: #334155;
+  margin: 10px 0;
+}
+.restaurant-rating {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+
+  color: #0f172a;
+  margin: 0 5px;
+}
+.total-reviews {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+
+  display: flex;
+  align-items: center;
+
+  color: #64748b;
+  margin: 0 5px;
+}
+.rating-star {
+  color: #ffcc00;
+  font-size: 16px;
+}
+@media only screen and (max-width: 767px) {
+  .restaurant-list-item {
+    padding: 0;
+    margin: 0;
+    width: 350px;
+    height: 200px;
+  }
+  .restaurant-lists {
+    padding: 0;
+  }
+  .restaurant-food-type {
+    font-size: 12px;
+  }
+  .restaurant-name {
+    font-size: 14px;
+  }
+}
+.page-number-section {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+.current-page {
+  font-family: Bree Serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.page-number {
+  margin: 10px;
+  padding: 0 10px;
+}
+.page-icon {
+  margin-top: 5px;
+}
+.restaurants-loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 81.5vh;
+  overflow: hidden;
+  mix-blend-mode: normal;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}

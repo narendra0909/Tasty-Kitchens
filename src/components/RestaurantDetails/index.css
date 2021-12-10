@@ -1,0 +1,146 @@
+.restaurant-details-container {
+  background-image: url('https://res.cloudinary.com/ddujkd2is/image/upload/v1637385823/Tasty%20kitchen/Frame_279backhroundimage_gyug8o.png');
+  background-size: cover;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 0 30px;
+  height: 60vh;
+}
+.restaurant-details-image {
+  height: 280px;
+  width: 445px;
+  border-radius: 8px;
+  margin-left: 30px;
+}
+.restaurant-details-content {
+  margin: 20px;
+}
+.restaurant-details-content-heading {
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: 0.20000000298023224px;
+  color: #ffffff;
+}
+.restaurant-details-content-type {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.restaurant-details-content-location {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #ffffff;
+}
+.restaurant-details-ratings {
+  display: flex;
+}
+.restaurant-details-restaurant-rating,
+.item-cost {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  margin: 0;
+}
+.plus-ratings,
+.for-people {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #e2e8f0;
+}
+@media only screen and (max-width: 768px) {
+  .restaurant-details-section {
+    position: relative;
+  }
+  .restaurant-details-container {
+    background-image: url('https://res.cloudinary.com/ddujkd2is/image/upload/v1637385823/Tasty%20kitchen/Frame_279backhroundimage_gyug8o.png');
+    background-size: cover;
+    height: 270px;
+    padding: 0;
+  }
+  .restaurant-details-image {
+    width: 221px;
+    height: 221px;
+    border-radius: 133.981px;
+    margin-left: 0;
+    position: absolute;
+    top: -30px;
+    left: -70px;
+  }
+  .restaurant-details-content {
+    position: absolute;
+    left: 150px;
+  }
+  .restaurant-details-content-heading {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+
+    letter-spacing: 0.2px;
+
+    color: #ffffff;
+  }
+  .restaurant-details-content-type,
+  .restaurant-details-content-location {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+
+    color: #ffffff;
+  }
+  .plus-ratings,
+  .for-people {
+    font-family: DM Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0px;
+    font-weight: bold;
+  }
+
+  .restaurant-rating,
+  .item-cost {
+    font-family: DM Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: left;
+    font-weight: bold;
+  }
+  .restaurant-menu-list {
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+}
+.restaurant-menu-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px 110px;
+  margin: 20px 80px;
+}

@@ -1,0 +1,119 @@
+.food-item-container {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  flex-shrink: 0;
+  width: 440px;
+  height: 150px;
+  margin: 24px 10px;
+}
+.food-item-image {
+  height: 150px;
+  width: 255px;
+  border-radius: 8px;
+}
+.food-details {
+  margin: 0 20px;
+}
+.food-item-name {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+
+  color: #334155;
+}
+.food-item-cost {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #334155;
+}
+
+.food-item-rating {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  color: #0a1f44;
+}
+.add-button {
+  height: 32px;
+  width: 58px;
+  border-radius: 5px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #ffa412;
+  order: 1;
+  flex-grow: 0;
+  border: 1px solid#ffa412;
+  cursor: pointer;
+}
+.decrease-button,
+.increase-button {
+  font-size: 18px;
+  border: 1px solid #ffa412;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+.updated-quantity {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 24px;
+  margin: 0 16px;
+  color: #475569;
+}
+
+.decrease-button:hover,
+.increase-button:hover {
+  color: #ffffff;
+  background-color: #ffa412;
+  border: 1px solid black;
+}
+@media only screen and (max-width: 768px) {
+  .food-item-container {
+    padding: 0;
+    width: 320px;
+    height: 100px;
+  }
+  .food-item-image {
+    height: 100px;
+    width: 160px;
+    border-radius: 8px;
+  }
+  .food-item-name {
+    font-size: 16px;
+    margin: 0;
+  }
+  .food-item-cost {
+    font-size: 14px;
+    margin: 0;
+  }
+  .food-item-rating {
+    font-size: 14px;
+  }
+  .rating-star {
+    font-size: 12px;
+  }
+  .add-button {
+    width: 44px;
+    height: 24px;
+  }
+  .decrease-button,
+  .increase-button {
+    font-size: 16px;
+  }
+}

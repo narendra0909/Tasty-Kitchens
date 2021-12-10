@@ -1,0 +1,47 @@
+.carousel-container {
+  margin: 20px 40px;
+  padding: 10px;
+}
+.slick-slide-image {
+  height: 470px;
+  width: auto;
+  margin: 0;
+}
+.slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slick-dots {
+  margin: 36px 0;
+}
+.slick-dots li button:before {
+  font-size: 6px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: '■';
+  text-align: center;
+  opacity: 0.25;
+  color: #ffffff;
+  font-size: 16px;
+}
+.slick-dots li.slick-active button:before {
+  opacity: 5;
+  color: #ffff;
+  font-size: 20px;
+}
+@media only screen and (max-width: 767px) {
+  .carousel-container {
+    margin: 0;
+    padding: 0px;
+  }
+  .slick-slide-image {
+    height: 188px;
+    width: auto;
+    margin: 0;
+  }
+}

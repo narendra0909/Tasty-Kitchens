@@ -1,0 +1,226 @@
+.desktop-form-container {
+  display: flex;
+}
+.login-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.login-image-container {
+  width: 50%;
+  height: 100%;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fefeff;
+  box-shadow: 0px 8px 40px rgba(7, 7, 7, 0.08);
+  border-radius: 8px;
+  padding: 30px 20px;
+}
+.login-card-title {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.login-logo {
+  height: 39px;
+  width: 49px;
+}
+.website-login-name {
+  font-family: DM Sans;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: start;
+  margin-left: 16px;
+
+  color: #f7931e;
+}
+.login-heading {
+  font-family: DM Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.details-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding: 20px;
+}
+.input-user-container {
+  display: flex;
+  flex-direction: column;
+}
+.input-label {
+  font-family: DM Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  margin: 10px 0;
+}
+.username-input {
+  background: #e2e8f0;
+  border-radius: 2px;
+  height: 40px;
+  width: 360px;
+  left: 0px;
+  top: 24px;
+  border-radius: 2px;
+  border-width: 0;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  padding-left: 10px;
+}
+.input-password-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.login-button {
+  height: 40px;
+  width: 360px;
+  left: 0px;
+  top: 0px;
+  border-radius: 8px;
+  background: #f7931e;
+  border-radius: 8px;
+  border-width: 0;
+  margin: 20px 0;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+}
+.login-image-container {
+  display: flex;
+  width: 50%;
+}
+.login-cover-image {
+  height: 100vh;
+  width: 100%;
+}
+@media only screen and (min-width: 769px) {
+  .mobile-image-container {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .login-form-container {
+    width: auto;
+    order: 1;
+  }
+  .login-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .login-image-container,
+  .website-login-name,
+  .login-logo {
+    display: none;
+  }
+  .desktop-form-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fefeff;
+    border-radius: 8px;
+    padding: 30px 20px;
+    box-shadow: none;
+  }
+
+  .mobile-image-container {
+    display: flex;
+    order: 0;
+    justify-content: flex-end;
+  }
+  .login-heading {
+    font-family: DM Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+
+    margin-left: 20px;
+  }
+  .input-label {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: #475569;
+  }
+  .username-input {
+    height: 40px;
+    width: 312px;
+    background: #e2e8f0;
+    border-radius: 2px;
+  }
+  .login-button {
+    height: 40px;
+    width: 312px;
+    border-radius: 8px;
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  .error-message {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #ef4444;
+  }
+}
+.error-message {
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ef4444;
+  margin: 0;
+  align-self: flex-start;
+}
