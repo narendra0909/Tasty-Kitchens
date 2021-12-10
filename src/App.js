@@ -17,6 +17,25 @@ class App extends Component {
     cartList: [],
   }
 
+  componentDidMount() {
+    this.getLocalCartData()
+  }
+
+  getLocalCartData = () => {
+    const cartItems = JSON.parse(localStorage.getItem('cartData'))
+    if (cartItems != null) {
+      const orderItem = cartItems.map(item => ({
+        name: item.name,
+        id: item.id,
+        imageUrl: item.imageUrl,
+        cost: item.cost,
+        quantity: item.quantity,
+      }))
+      //   console.log(orderItem)
+      this.setState({cartList: orderItem})
+    }
+  }
+
   addCartItem = foodItem => {
     const {cartList} = this.state
     // console.log(cartList)
@@ -76,11 +95,13 @@ class App extends Component {
   }
 
   removeAllItems = () => {
+    localStorage.removeItem('cartData')
     this.setState({cartList: []})
   }
 
   render() {
     const {cartList} = this.state
+    console.log(cartList)
 
     return (
       <CartContext.Provider
@@ -91,6 +112,7 @@ class App extends Component {
           decreaseCartItem: this.decreaseCartItem,
           removeCartItem: this.removeCartItem,
           removeAllItems: this.removeAllItems,
+          //   getCartData: this.getCartData,
         }}
       >
         <Switch>

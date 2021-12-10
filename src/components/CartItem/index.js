@@ -31,7 +31,7 @@ const CartItem = props => (
               <img src={imageUrl} alt={name} className="cart-product-image" />
               <h1 className="cart-product-heading">{name}</h1>
             </div>
-            <div className="">
+            <div style={{display: 'flex'}}>
               <button
                 testid="decrement-quantity"
                 type="button"
@@ -40,11 +40,11 @@ const CartItem = props => (
               >
                 <AiOutlineMinus style={{marginTop: '2px'}} />
               </button>
-              <span testid="item-quantity" className="updated-quantity">
+              <p testid="item-quantity" className="updated-quantity">
                 {quantity}
-              </span>
+              </p>
               <button
-                testid="item-quantity"
+                testid="increment-quantity"
                 onClick={onClickIncrease}
                 type="button"
                 className="increase-button"
@@ -52,7 +52,9 @@ const CartItem = props => (
                 <AiOutlinePlus style={{marginTop: '2px'}} />
               </button>
             </div>
-            <h1 className="cart-product-cost">₹ {totalPrice}.00</h1>
+            <h1 testid="total-price" className="cart-product-cost">
+              ₹ {totalPrice}.00
+            </h1>
             <AiOutlineClose
               onClick={onRemoveCartItem}
               className="remove-item"

@@ -26,8 +26,9 @@ class Restaurants extends Component {
     restaurantList: [],
     searchInput: '',
     activePage: 1,
-    activeOptionId: sortByOptions[0].value,
+    activeOptionId: sortByOptions[1].value,
     isLoading: false,
+    noOfPages: 0,
   }
 
   componentDidMount() {
@@ -40,9 +41,9 @@ class Restaurants extends Component {
 
   onIncrementOffset = () => {
     const {activePage} = this.state
-    if (activePage < 5)
+    if (activePage < 4)
       this.setState(prevState => ({activePage: prevState.activePage + 1}))
-    console.log(activePage)
+    // console.log(activePage)
     this.getRestaurants()
   }
 
@@ -70,6 +71,8 @@ class Restaurants extends Component {
     const response = await fetch(apiUrl, options)
     const data = await response.json()
     // console.log(data)
+    const totalRestaurants = data.total
+    const noOfPages = Math.ceil(totalRestaurants / limit)
     const fetchedData = data.restaurants.map(eachRestaurant => ({
       costForTwo: eachRestaurant.cost_for_two,
       cuisine: eachRestaurant.cuisine,
@@ -88,7 +91,7 @@ class Restaurants extends Component {
       ratingText: eachRestaurant.user_rating.rating_text,
       totalReviews: eachRestaurant.user_rating.total_reviews,
     }))
-    this.setState({restaurantList: fetchedData, isLoading: false})
+    this.setState({restaurantList: fetchedData, isLoading: false, noOfPages})
     // console.log(fetchedData)
   }
 
@@ -101,7 +104,7 @@ class Restaurants extends Component {
 
     return (
       <RestaurantHeader
-        key={sortByOptions[0].id}
+        key={sortByOptions[1].id}
         activeOptionId={activeOptionId}
         sortByOptions={sortByOptions}
         updateActiveOptionId={this.updateActiveOptionId}
@@ -132,9 +135,10 @@ class Restaurants extends Component {
             <Link
               testid="restaurant-item"
               to={`restaurants-list/${eachRestaurant.id}`}
+              key={eachRestaurant.id}
               className="restaurant-id"
             >
-              <li className="restaurant-list-item">
+              <li testid="restaurant-item" className="restaurant-list-item">
                 <img
                   className="restaurant-image"
                   alt="restaurant"
@@ -164,7 +168,7 @@ class Restaurants extends Component {
   }
 
   renderPagination = () => {
-    const {activePage} = this.state
+    const {activePage, noOfPages} = this.state
     return (
       <div className="page-number-section">
         <button
@@ -176,7 +180,7 @@ class Restaurants extends Component {
           <MdArrowBackIosNew className="page-icon" />
         </button>
         <span testid="active-page-number" className="current-page">
-          {activePage}
+          {activePage} of {noOfPages}
         </span>
         <button
           testid="pagination-right-button"

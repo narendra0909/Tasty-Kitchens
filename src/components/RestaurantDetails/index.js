@@ -69,8 +69,8 @@ class RestaurantDetails extends Component {
       foodItemsData: updateFoodItems,
       isLoading: false,
     })
-    console.log(updateFoodItems)
-    console.log(updatedData)
+    // console.log(updateFoodItems)
+    // console.log(updatedData)
   }
 
   changeBtnStatus = id => {

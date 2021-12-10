@@ -46,10 +46,11 @@ In this project Tasty Kitchens, App that will fetch data from an internal server
   - Users able to select the Cart link in the navbar and be able to view their selected Food items, each food item quantity, and price of each food item in a separate page.
   - Users able to increase or decrease their each food item quantity and price should increase or decrease appropriately.
   - Users able to see their order total, Cart with highlighted text in Navbar
+  - Users able to see Cart Items even after the app is refreshed.
 
 - _Logout Button_
   - Users can able to logout from accounts page.
-- Usersable to view the website responsively in mobile view
+- User sable to view the website responsively in mobile view
 - When the users enter invalid route in the URL then the Page not found Route is displayed.
 
 ## Data Fetch URL's

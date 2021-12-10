@@ -129,12 +129,20 @@ class Header extends Component {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/cart" target="_blank" className="nav-link profile">
+                  <Link
+                    to="/profile"
+                    target="_blank"
+                    className="nav-link profile"
+                  >
                     <FcManager />
                   </Link>
                 </li>
               </ul>
-              <button className="logout-button" type="submit">
+              <button
+                onClick={this.onClickLogOut}
+                className="logout-button"
+                type="submit"
+              >
                 Logout
               </button>
 

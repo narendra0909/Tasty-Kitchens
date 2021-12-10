@@ -27,15 +27,17 @@ const FoodItem = props => (
       } = foodItemsData
 
       const onClickAddToCart = () => {
-        console.log({...foodItemsData})
         addCartItem({...foodItemsData, quantity})
+        const localCartItems =
+          JSON.parse(localStorage.getItem('cartData')) || []
+        localCartItems.push({...foodItemsData, quantity})
+        localStorage.setItem('cartData', JSON.stringify(localCartItems))
       }
 
       const onStatusChange = () => {
         changeBtnStatus(id)
         onClickAddToCart()
         onIncreaseQuantity(id)
-        increaseCartItem(id)
       }
 
       const increaseItemQuantity = () => {
