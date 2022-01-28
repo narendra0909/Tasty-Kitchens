@@ -26,7 +26,7 @@ class Restaurants extends Component {
     restaurantList: [],
     searchInput: '',
     activePage: 1,
-    activeOptionId: sortByOptions[1].value,
+    activeOptionId: sortByOptions[0].value,
     isLoading: false,
     noOfPages: 0,
   }
