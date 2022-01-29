@@ -132,13 +132,12 @@ class Restaurants extends Component {
 
         <ul className="restaurant-lists">
           {searchResults.map(eachRestaurant => (
-            <Link
-              testid="restaurant-item"
-              to={`restaurants-list/${eachRestaurant.id}`}
-              key={eachRestaurant.id}
-              className="restaurant-id"
-            >
-              <li testid="restaurant-item" className="restaurant-list-item">
+            <li testid="restaurant-item" className="restaurant-list-item">
+              <Link
+                to={`restaurant/${eachRestaurant.id}`}
+                key={eachRestaurant.id}
+                className="restaurant-id"
+              >
                 <img
                   className="restaurant-image"
                   alt="restaurant"
@@ -159,8 +158,8 @@ class Restaurants extends Component {
                     </span>
                   </div>
                 </div>
-              </li>
-            </Link>
+              </Link>
+            </li>
           ))}
         </ul>
       </div>
@@ -180,8 +179,9 @@ class Restaurants extends Component {
           <MdArrowBackIosNew className="page-icon" />
         </button>
         <span testid="active-page-number" className="current-page">
-          {activePage} of {noOfPages}
-        </span>
+          {activePage}{' '}
+        </span>{' '}
+        of {noOfPages}
         <button
           testid="pagination-right-button"
           className="page-number"

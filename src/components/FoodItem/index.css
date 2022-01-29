@@ -44,6 +44,7 @@
   display: flex;
   align-items: center;
   color: #0a1f44;
+  margin:0;
 }
 .add-button {
   height: 32px;

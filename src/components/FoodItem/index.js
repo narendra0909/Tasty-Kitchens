@@ -67,7 +67,7 @@ const FoodItem = props => (
               <p className="food-item-cost">₹ {cost}</p>
               <div style={{display: 'flex', marginBottom: '10px'}}>
                 <AiFillStar className="rating-star" />
-                <span className="food-item-rating">{rating}</span>
+                <p className="food-item-rating">{rating}</p>
               </div>
               {buttonStatus ? (
                 <>

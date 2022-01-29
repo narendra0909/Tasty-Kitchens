@@ -43,9 +43,9 @@ const Cart = () => (
               <div className="cart-footer">
                 <h1 className="order-heading">Order Total:</h1>
                 <div>
-                  <h1 testid="total-price" className="order-price">
+                  <p testid="total-price" className="order-price">
                     ₹ {total}.00
-                  </h1>
+                  </p>
                   <Link to="/payment-success">
                     <button className="place-order-btn" type="button">
                       Place order
