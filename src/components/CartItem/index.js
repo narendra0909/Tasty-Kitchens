@@ -52,9 +52,9 @@ const CartItem = props => (
                 <AiOutlinePlus style={{marginTop: '2px'}} />
               </button>
             </div>
-            <h1 testid="total-price" className="cart-product-cost">
+            <p testid="total-price" className="cart-product-cost">
               ₹ {totalPrice}.00
-            </h1>
+            </p>
             <AiOutlineClose
               onClick={onRemoveCartItem}
               className="remove-item"

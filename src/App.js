@@ -122,7 +122,7 @@ class App extends Component {
           <ProtectedRoute exact path="/profile" component={Profile} />
           <ProtectedRoute
             exact
-            path="/restaurants-list/:id"
+            path="/restaurant/:id"
             component={RestaurantDetails}
           />
           <ProtectedRoute

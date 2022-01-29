@@ -100,9 +100,15 @@ class RestaurantDetails extends Component {
   onDecreaseQuantity = id => {
     this.setState(prevState => ({
       foodItemsData: prevState.foodItemsData.map(eachItem => {
+        const updatedQuantity = eachItem.activeQuantity - 1
         if (id === eachItem.id) {
-          const updatedQuantity = eachItem.activeQuantity - 1
-          return {...eachItem, activeQuantity: updatedQuantity}
+          if (updatedQuantity === 0) {
+            return {...eachItem, buttonStatus: false, activeQuantity: 0}
+          }
+          if (updatedQuantity > 0) {
+            // updatedQuantity = eachItem.activeQuantity - 1
+            return {...eachItem, activeQuantity: updatedQuantity}
+          }
         }
         return eachItem
       }),
@@ -161,7 +167,7 @@ class RestaurantDetails extends Component {
                 <p className="plus-ratings">{reviewsCount}</p>
               </div>
               <div style={{padding: '0 30px'}}>
-                <span className="item-cost">₹ {cost}</span>
+                <p className="item-cost">₹ {cost}</p>
                 <p className="for-people">Cost for two</p>
               </div>
             </div>
