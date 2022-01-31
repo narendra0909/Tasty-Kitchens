@@ -95,9 +95,6 @@
 @media only screen and (max-width: 767px) {
   .restaurant-list-item {
     padding: 0;
-    margin: 0;
-    width: 350px;
-    height: 200px;
   }
   .restaurant-lists {
     padding: 0;
@@ -107,6 +104,7 @@
   }
   .restaurant-name {
     font-size: 14px;
+    max-width: 140px;
   }
 }
 .page-number-section {
@@ -122,6 +120,7 @@
   line-height: 27px;
   letter-spacing: 0em;
   text-align: center;
+  padding-right: 10px;
 }
 .page-number {
   margin: 10px;
