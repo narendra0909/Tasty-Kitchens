@@ -42,16 +42,20 @@ class Restaurants extends Component {
   onIncrementOffset = () => {
     const {activePage} = this.state
     if (activePage < 4)
-      this.setState(prevState => ({activePage: prevState.activePage + 1}))
+      this.setState(
+        prevState => ({activePage: prevState.activePage + 1}),
+        this.getRestaurants,
+      )
     // console.log(activePage)
-    this.getRestaurants()
   }
 
   onDecrementOffset = () => {
     const {activePage} = this.state
     if (activePage > 1)
-      this.setState(prevState => ({activePage: prevState.activePage - 1}))
-    this.getRestaurants()
+      this.setState(
+        prevState => ({activePage: prevState.activePage - 1}),
+        this.getRestaurants,
+      )
   }
 
   getRestaurants = async () => {
@@ -179,8 +183,8 @@ class Restaurants extends Component {
           <MdArrowBackIosNew className="page-icon" />
         </button>
         <span testid="active-page-number" className="current-page">
-          {activePage}{' '}
-        </span>{' '}
+          {activePage}
+        </span>
         of {noOfPages}
         <button
           testid="pagination-right-button"
