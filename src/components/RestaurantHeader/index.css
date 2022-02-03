@@ -28,6 +28,7 @@
 }
 .sorting-container {
   display: flex;
+  align-items: center;
 }
 .sort-by {
   font-family: DM Sans;

@@ -15,7 +15,11 @@ const CartItem = props => (
       }
 
       const onClickDecrease = () => {
-        decreaseCartItem(id)
+        if (quantity < 1) {
+          removeCartItem(id)
+        } else {
+          decreaseCartItem(id)
+        }
       }
 
       const onRemoveCartItem = () => {

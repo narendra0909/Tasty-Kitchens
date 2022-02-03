@@ -85,6 +85,8 @@ class App extends Component {
           return eachCartItem
         }),
       }))
+    } else {
+      this.removeCartItem(id)
     }
   }
 

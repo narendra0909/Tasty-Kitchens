@@ -47,7 +47,11 @@ const Cart = () => (
                     ₹ {total}.00
                   </p>
                   <Link to="/payment-success">
-                    <button className="place-order-btn" type="button">
+                    <button
+                      onClick={onClickRemove}
+                      className="place-order-btn"
+                      type="button"
+                    >
                       Place order
                     </button>
                   </Link>

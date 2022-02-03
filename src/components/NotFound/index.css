@@ -1,6 +1,6 @@
 .not-found-app-container {
   background-color: #e5e5e5;
-  height: 100%;
+  height: 100vh;
 }
 .not-found-container {
   display: flex;
